@@ -61,5 +61,14 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        Button btn_tablelayoutlogin = findViewById(R.id.btn_tablelayoutlogin);
+        btn_tablelayoutlogin.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this,TableLayoutLogin.class);
+                startActivity(intent);
+            }
+        });
     }
 }
