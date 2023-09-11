@@ -2,6 +2,7 @@ package com.xxxy.lihang.baseui;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -46,6 +47,18 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 setContentView(R.layout.activity_framelayout);
+            }
+        });
+
+        Button btn_tableLayout = findViewById(R.id.btn_tablelayout);
+        btn_tableLayout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                //写什么  以前我们直接打开activity_tablelayout.xml setContentView(R.layout.activity_tablelayout);
+
+                //现在我们做  通过MainActivity打开  TableLayoutActivity
+                Intent intent = new Intent(MainActivity.this,TableLayoutActivity.class);
+                startActivity(intent);
             }
         });
     }

@@ -28,14 +28,15 @@
 
     </Button>
     <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="按钮4">
-    </Button>
-    <Button
         android:id="@+id/btn_framelayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="帧布局">
+    </Button>
+    <Button
+        android:id="@+id/btn_tablelayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="表格布局">
     </Button>
 </LinearLayout>
