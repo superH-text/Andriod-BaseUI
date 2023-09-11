@@ -16,7 +16,7 @@ public class MainActivity extends AppCompatActivity {
         //拿到Button控件
 
         Button btn_login = findViewById(R.id.btn_login);
-        Button btn_velay = findViewById(R.id.btn_velay);
+
 
         //对控件做点击事件
 
@@ -27,11 +27,25 @@ public class MainActivity extends AppCompatActivity {
                 setContentView(R.layout.activity_login);
             }
         });
-
+        Button btn_velay = findViewById(R.id.btn_velay);
         btn_velay.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 setContentView(R.layout.acticity_vertical);
+            }
+        });
+        Button btn_relative = findViewById(R.id.btn_relative);
+        btn_relative.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                setContentView(R.layout.activity_relative);
+            }
+        });
+        Button btn_framelayout = findViewById(R.id.btn_framelayout);
+        btn_framelayout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                setContentView(R.layout.activity_framelayout);
             }
         });
     }
