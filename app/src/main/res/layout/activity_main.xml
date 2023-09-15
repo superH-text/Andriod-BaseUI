@@ -46,4 +46,16 @@
         android:layout_height="wrap_content"
         android:text="表格登录">
     </Button>
+    <Button
+        android:id="@+id/btn_gridlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="网格布局">
+    </Button>
+    <Button
+        android:id="@+id/btn_abslayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="绝对布局">
+    </Button>
 </LinearLayout>

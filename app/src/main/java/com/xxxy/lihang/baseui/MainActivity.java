@@ -70,5 +70,22 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+        Button btn_gridlayout = findViewById(R.id.btn_gridlayout);
+        btn_gridlayout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this,GridLayoutActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        Button btn_abs = findViewById(R.id.btn_abslayout);
+        btn_abs.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this,AbsoluteActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 }

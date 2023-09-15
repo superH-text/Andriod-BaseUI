@@ -13,6 +13,12 @@
         android:theme="@style/Theme.BaseUI"
         tools:targetApi="31">
         <activity
+            android:name=".AbsoluteActivity"
+            android:exported="false" />
+        <activity
+            android:name=".GridLayoutActivity"
+            android:exported="false" />
+        <activity
             android:name=".TableLayoutLogin"
             android:exported="false" />
         <activity
